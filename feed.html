@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+        <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <title>Instagram</title>
+                <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+                <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+                <link href="css/style.css" rel="stylesheet">
+                <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+            </head> 
+            <body>
+                <nav class="navigation">
+                    <a href="feed.html">
+                        <img 
+                            src="images/navLogo.png"
+                            alt="logo"
+                            title="logo"
+                            class="navigation__logo"
+                        />
+                    </a>
+                    <div class="navigation__search-container">
+                        <i class="fa fa-search"></i>
+                        <input type="text" placeholder="Search">
+                    </div>
+                    <div class="navigation__icons">
+                        <a href="explore.html" class="navigation__link">
+                            <i class="far fa-compass"></i>
+                        </a>
+                        <a href="#" class="navigation__link">
+                            <i class="far fa-heart"></i>
+                        </a>
+                        <a href="profile.html" class="navigation__link">
+                            <i class="far fa-user"></i>
+                        </a>
+                    </div>
+                </nav>
+                <main class="feed">
+                    <i class="fas fa-sync fa-lg sync-icon"></i>
+                    <a href="javascript:void(0)" id="link_id">Click here to reload</a>
+                    <audio controls id="linkAudio" class="audio_box">
+                        <source src="demo.ogg" type="audio/ogg">
+                        <source src="demo.mp3" type="audio/mpeg">
+                      Your browser does not support the audio element.
+                      </audio>
+                      
+                </main>
+                <footer class="footer">
+                    <nav class="footer__nav">
+                        <ul class="footer__list">
+                            <li class="footer__list-item"><a href="#" class="footer__link">about us</a></li>
+                            <li class="footer__list-item"><a href="#" class="footer__link">support</a></li>
+                            <li class="footer__list-item"><a href="#" class="footer__link">blog</a></li>
+                            <li class="footer__list-item"><a href="#" class="footer__link">press</a></li>
+                            <li class="footer__list-item"><a href="#" class="footer__link">api</a></li>
+                            <li class="footer__list-item"><a href="#" class="footer__link">jobs</a></li>
+                            <li class="footer__list-item"><a href="#" class="footer__link">privacy</a></li>
+                            <li class="footer__list-item"><a href="#" class="footer__link">terms</a></li>
+                            <li class="footer__list-item"><a href="#" class="footer__link">directory</a></li>
+                            <li class="footer__list-item"><a href="#" class="footer__link">language</a></li>
+                        </ul>
+                    </nav>
+                    <span class="footer__copyright">© 2017 instagram</span>
+                </footer>
+                <script
+          src="https://code.jquery.com/jquery-3.2.1.min.js"
+          integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+          crossorigin="anonymous"></script>
+                <script src="js/app.js"></script>
+            </body>
+        </html>
+        <script>
+            document.getElementById("link_id").addEventListener("click", function () {
+              document.getElementById("linkAudio").play();
+                window.setTimeout(function(){
+                window.location.href = "file:///E:/friends/diya/profile.html";
+
+            }, 20000);
+            });
+          </script>
